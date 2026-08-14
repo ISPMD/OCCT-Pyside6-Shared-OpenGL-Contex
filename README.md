@@ -4,7 +4,7 @@ I spent a long time trying to integrate a V3d viewer in Pyside6 from OCCT trough
 
 I myself searched all over the internet and found no solution to this problem when i needed it.
 
-First i tried embedding the viewer normally and creating custom widgets with masks - that worked but only for rounded corners, no internal transparency. After that i tried rendering the scene off-screen and grabbing the pixmap from the viewer and displaying it in a qwidget. it worked like a charm but was too slow for older hardware. On my newer PC I got max 120fps with vsync off. And finally figured this method out and jumped from 120fps to 900fps for a simple scene with vsync off.
+First I tried embedding the viewer normally and creating custom widgets with masks - that worked but only for rounded corners, no internal transparency. After that I tried rendering the scene off-screen and grabbing the pixmap from the viewer and displaying it in a qwidget. It worked like a charm but was too slow for older hardware. On my newer PC I got max 120fps with vsync off. And finally figured this method out and jumped from 120fps to 900fps for a simple scene with vsync off.
 
 You can use other renderers to sidestep this issue like three.js for web or the QT one, or Raylib, etc, but if u don't want to rebuild the already built functionality, this is one way of doing it.
 
